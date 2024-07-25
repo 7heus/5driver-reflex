@@ -55,6 +55,11 @@ class Game {
       if (this.timeRemaining == 0) this.endGame();
       this.timeRemaining--;
     }, 1000);
+    const scoreboard = document.getElementById("scoreboard");
+
+    scoreboard.style.left = `${
+      (this.gameScreen.offsetWidth - scoreboard.offsetWidth) / 2
+    }px`;
   }
 
   endGame() {
@@ -68,5 +73,15 @@ class Game {
     this.gameContainer.style.display = "none";
     this.endScreen.style.display = "block";
     this.orb.remove();
+  }
+
+  onResize() {
+    console.log("resizing");
+    console.log(this.gameScreen.offsetWidth);
+    const scoreboard = document.getElementById("scoreboard");
+
+    scoreboard.style.left = `${
+      (this.gameScreen.offsetWidth - scoreboard.offsetWidth) / 2
+    }px`;
   }
 }

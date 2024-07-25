@@ -8,6 +8,7 @@ body {
   height: 100vh;
   background: #282c34;
   color: #61dafb;
+  overflow: hidden;
 }
 
 #intro-screen {
@@ -100,8 +101,8 @@ body {
   border-style: solid;
   border-radius: 10%;
   position: absolute;
-  left: 750px;
-  top: 850px;
+  left: 39%;
+  top: 100%;
   visibility: visible;
   width: 400px;
   height: 80px;
