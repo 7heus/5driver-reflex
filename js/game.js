@@ -55,11 +55,7 @@ class Game {
       if (this.timeRemaining == 0) this.endGame();
       this.timeRemaining--;
     }, 1000);
-    const scoreboard = document.getElementById("scoreboard");
-
-    scoreboard.style.left = `${
-      (this.gameScreen.offsetWidth - scoreboard.offsetWidth) / 2
-    }px`;
+    this.onResize();
   }
 
   endGame() {
@@ -82,6 +78,10 @@ class Game {
 
     scoreboard.style.left = `${
       (this.gameScreen.offsetWidth - scoreboard.offsetWidth) / 2
+    }px`;
+
+    scoreboard.style.top = `${
+      this.gameScreen.offsetHeight - scoreboard.offsetHeight + 80
     }px`;
   }
 }

@@ -13,7 +13,7 @@ body {
 
 #intro-screen {
   text-align: center;
-  background: #20232a;
+  background: #282c34;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -60,7 +60,6 @@ body {
   border: 2px solid #61dafb;
   border-radius: 10px;
 }
-
 #orb {
   position: absolute;
   width: 60px;
@@ -107,6 +106,7 @@ body {
   width: 400px;
   height: 80px;
   background-color: #20232a;
+  align-self: center;
 }
 
 #time-running {
